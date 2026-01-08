@@ -1,0 +1,52 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 180ms ease-out both;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 220ms ease-out both;
+}
+
+:root {
+  --dy-accent: rgb(236, 72, 153); /* tailwind pink-500 */
+  --dy-accent-strong: rgb(219, 39, 119); /* tailwind pink-600 */
+  --dy-surface: rgba(255, 255, 255, 0.72);
+  --dy-surface-strong: rgba(255, 255, 255, 0.85);
+  --dy-border: rgba(255, 255, 255, 0.55);
+  --dy-border-strong: rgba(255, 255, 255, 0.7);
+}
+
+.dy-glass {
+  background: var(--dy-surface);
+  border: 1px solid var(--dy-border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 12px 32px rgba(236, 72, 153, 0.10);
+}
+
+.dy-glass-strong {
+  background: var(--dy-surface-strong);
+  border: 1px solid var(--dy-border-strong);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 14px 36px rgba(236, 72, 153, 0.12);
+}
