@@ -6,7 +6,7 @@ $ErrorActionPreference = "Stop"
 
 $Root = Resolve-Path (Join-Path $PSScriptRoot "..")
 $Stamp = Get-Date -Format "yyyyMMdd-HHmm"
-$ReleaseName = "douying-$Stamp"
+$ReleaseName = "tianyu-ai-director-$Stamp"
 $ReleaseRoot = Join-Path $Root $OutDir
 $ReleaseDir = Join-Path $ReleaseRoot $ReleaseName
 $ZipPath = Join-Path $ReleaseRoot "$ReleaseName.zip"

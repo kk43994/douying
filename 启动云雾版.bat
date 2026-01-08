@@ -9,7 +9,7 @@ set "DRY_RUN=0"
 if /i "%~1"=="--dry-run" set "DRY_RUN=1"
 
 echo ========================================
-echo   DouScript AI - YunWu API Edition
+echo   天雨学长AI编导 - YunWu API Edition
 echo ========================================
 echo.
 echo Tips:

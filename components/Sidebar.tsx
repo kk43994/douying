@@ -23,7 +23,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ currentView, onViewChange }) =
         <div className="bg-pink-600 p-2 rounded-lg shadow-sm shadow-pink-200/40">
           <Sparkles className="text-white w-6 h-6" />
         </div>
-        <span className="text-xl font-bold text-gray-800 tracking-tight">智影脚本 AI</span>
+        <span className="text-xl font-bold text-gray-800 tracking-tight">天雨学长AI编导</span>
       </div>
 
       <nav className="flex-1 p-4 space-y-2 overflow-y-auto">
@@ -67,7 +67,7 @@ export const MobileHeader: React.FC<SidebarProps> = ({ currentView, onViewChange
                 <div className="bg-pink-600 p-1.5 rounded-lg shadow-sm shadow-pink-200/40">
                     <Sparkles className="text-white w-5 h-5" />
                 </div>
-                <span className="text-lg font-bold text-gray-800">智影脚本 AI</span>
+                <span className="text-lg font-bold text-gray-800">天雨学长AI编导</span>
             </div>
             <div className="flex gap-3 overflow-x-auto">
                  <button onClick={() => onViewChange('generator')} className={currentView === 'generator' ? 'text-pink-600' : 'text-gray-500'}>
