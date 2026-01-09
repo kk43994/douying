@@ -40,6 +40,9 @@ Copy-Item (Join-Path $Root "tsconfig.json") $ReleaseDir -Force
 Copy-Item (Join-Path $Root "启动平台.bat") $ReleaseDir -Force
 Copy-Item (Join-Path $Root "关闭平台.bat") $ReleaseDir -Force
 Copy-Item (Join-Path $Root "重启平台.bat") $ReleaseDir -Force
+Copy-Item (Join-Path $Root "启动平台.command") $ReleaseDir -Force
+Copy-Item (Join-Path $Root "关闭平台.command") $ReleaseDir -Force
+Copy-Item (Join-Path $Root "重启平台.command") $ReleaseDir -Force
 Copy-Item (Join-Path $Root "使用说明.md") $ReleaseDir -Force
 Copy-Item (Join-Path $Root "scripts\\launcher") $ReleaseScriptsDir -Recurse -Force
 
